@@ -23,6 +23,8 @@ public class MultithreadingApplication {
 		});
 		thread3.start();
 
+		
+
 		//SpringApplication.run(MultithreadingApplication.class, args);
 	}
 

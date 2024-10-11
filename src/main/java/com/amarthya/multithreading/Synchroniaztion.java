@@ -11,4 +11,11 @@ public class Synchroniaztion {
             return 1;
         }
     }
+
+    public static String staticEg(){
+        synchronized (Synchroniaztion.class) {
+            return "s";
+        }
+    }
+
 }
