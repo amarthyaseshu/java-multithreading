@@ -14,7 +14,7 @@ public class ExecutorsServiceTest {
             return Arrays.asList(1,2,3,4);
         });
 
-        futureInt.get()
+        futureInt.get();
 
     }
 }

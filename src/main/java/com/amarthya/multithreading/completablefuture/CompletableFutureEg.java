@@ -1,4 +1,4 @@
-package com.amarthya.multithreading.executorsservice;
+package com.amarthya.multithreading.completablefuture;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
