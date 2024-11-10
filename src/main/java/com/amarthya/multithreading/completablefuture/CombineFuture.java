@@ -47,6 +47,12 @@ public class CombineFuture {
         //Combine multiple independent completable future
         CompletableFuture<Void> voidCompletableFuture = CompletableFuture.allOf(future1, future3, future4);
 
+        String f2=   future1.join();
+        Integer f3= future3.join();
+        Integer f4= future4.join();
+
+        // or
+
         // To transform data after all futures completed
 
         voidCompletableFuture.thenRun(()->{
@@ -54,6 +60,8 @@ public class CombineFuture {
             future3.join();
             future4.join();
         }).join();
+
+
 
         //Combine multiple independent completable future - Return if any one is returned first
 
