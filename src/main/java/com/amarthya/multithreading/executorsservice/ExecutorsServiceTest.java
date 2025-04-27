@@ -10,9 +10,7 @@ public class ExecutorsServiceTest {
     public void test() throws ExecutionException, InterruptedException {
         ExecutorService executorService= Executors.newFixedThreadPool(10);
 
-     Future<List<Integer>> futureInt= executorService.submit(()->{
-            return Arrays.asList(1,2,3,4);
-        });
+     Future<List<Integer>> futureInt= executorService.submit(()-> Arrays.asList(1,2,3,4));
 
         futureInt.get();
 
