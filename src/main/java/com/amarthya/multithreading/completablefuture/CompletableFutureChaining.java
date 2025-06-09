@@ -18,7 +18,7 @@ public class CompletableFutureChaining {
     }
 
     // thenApplyAsync - Returns completable future with diff thread
-    // thenAcceptAsync - Doesn't return anything with diff threadk
+    // thenAcceptAsync - Doesn't return anything with diff thread
     public static void aSynchronous() {
         CompletableFuture.supplyAsync(() -> {
             System.out.println("Executing a task in supplyAsync: " + Thread.currentThread().getName());
